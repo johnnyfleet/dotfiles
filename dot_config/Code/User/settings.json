@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "git.suggestSmartCommit": false,
+    "redhat.telemetry.enabled": true
+}
