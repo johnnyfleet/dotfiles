@@ -1,0 +1,14 @@
+[user]
+	email = johnnyfleet@gmail.com
+	name = John Stephenson
+	signinkey = DD8447134681CAAE
+
+[github]
+	user = johnnyfleet
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true
