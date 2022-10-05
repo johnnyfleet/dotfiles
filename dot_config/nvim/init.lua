@@ -10,7 +10,7 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = fale
 vim.opt.autoindent = true
-vim.opt.colorcolumn = '88'
+vim.opt.colorcolumn = '80'
 vim.opt.relativenumber = true
 -- Set leader key to space
 vim.g.mapleader = " "
