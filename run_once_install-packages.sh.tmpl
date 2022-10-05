@@ -1,0 +1,10 @@
+{{ if eq .chezmoi.osRelease.id "debian" -}}
+#!/bin/sh
+# Debian-specific code
+sudo apt update && sudo apt install git zsh ohmyzsh
+sudo snap install nvim chezmoi --classic
+{{ else if eq .chezmoi.osRelease.id "manjaro" -}}
+#!/bin/sh
+# Manjaro-specific code
+sudo pamac install git chezmoi neovim zsh
+{{ end }}
