@@ -1,6 +1,6 @@
-{{ if eq .chezmoi.osRelease.id "debian" -}}
+{{ if eq .chezmoi.osRelease.id "ubuntu" -}}
 #!/bin/sh
-# Debian-specific code
+# Ubuntu-specific code
 sudo apt update && sudo apt install git zsh ohmyzsh
 sudo snap install nvim chezmoi --classic
 {{ else if eq .chezmoi.osRelease.id "manjaro" -}}
