@@ -11,9 +11,24 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = fale
 vim.opt.autoindent = true
 vim.opt.colorcolumn = '88'
+vim.opt.relativenumber = true
+-- Set leader key to space
+vim.g.mapleader = " "
 
 --- Key mappings
-vim.keymap.set('n', '<space>w', '<cmd>write<cr>', {desc = 'Save'})
+vim.keymap.set('n', '<leader>w', '<cmd>write<cr>', {desc = 'Save'})
+
+-- Focus mode - goyo + limelight
+-- goyo is a korean word which means silence
+-- key binding
+vim.keymap.set('n', '<leader>gy', ':Goyo<CR>', {desc = 'Toggle Goyo'})
+
+-- Enable limelight when entering goyo mode
+-- Disable limelight when leaving goyo mode
+vim.cmd [[
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+]]
 
 --- Setup package manager
 local install_path = vim.fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
