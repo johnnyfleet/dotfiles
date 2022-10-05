@@ -2,7 +2,8 @@
 #!/bin/sh
 # Ubuntu-specific code
 sudo apt update && sudo apt install git zsh
-sudo snap install nvim chezmoi --classic
+sudo snap install nvim --classic
+sudo snap install chezmoi --classic
 {{ else if eq .chezmoi.osRelease.id "manjaro" -}}
 #!/bin/sh
 # Manjaro-specific code
