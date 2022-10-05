@@ -1,7 +1,7 @@
 {{ if eq .chezmoi.osRelease.id "ubuntu" -}}
 #!/bin/sh
 # Ubuntu-specific code
-sudo apt update && sudo apt install git zsh ohmyzsh
+sudo apt update && sudo apt install git zsh
 sudo snap install nvim chezmoi --classic
 {{ else if eq .chezmoi.osRelease.id "manjaro" -}}
 #!/bin/sh
