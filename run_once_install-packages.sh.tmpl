@@ -2,6 +2,7 @@
 #!/bin/sh
 # Ubuntu-specific code
 sudo apt update && sudo apt install git zsh
+sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo snap install nvim --classic
 {{ else if eq .chezmoi.osRelease.id "manjaro" -}}
 #!/bin/sh
