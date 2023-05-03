@@ -3,6 +3,12 @@ Recent Files[$e]=My Layout.layout.latte,file:$HOME/.config/latte/My Layout.layou
 Recent URLs[$e]=file:$HOME/.config/latte/,file:$HOME/
 detailViewIconSize=16
 
+[KPropertiesDialog]
+3440x1440 screen: Height=591
+3440x1440 screen: Width=650
+DP-3 Height 3440x1440 DP-3=591
+DP-3 Width 3440x1440 DP-3=436
+
 [LatteSettingsDialog]
 downloadWindowSize=980,600
 windowSize=1100,750
@@ -19,9 +25,9 @@ sortOrder=0
 outlineWidth=1
 
 [ScreenConnectors]
-10=eDP-1:::0,0 1920x1200
-11=DP-3:::0,0 3440x1440
-12=DP-2:::0,0 3440x1440
+10=eDP-1:::1920,283 1920x1200
+11=DP-3:::0,0 1920x1080
+12=DP-2:::0,0 1920x1080
 13=:::0,0 0x0
 
 [UniversalSettings]
@@ -29,11 +35,14 @@ badges3DStyle=false
 canDisableBorders=false
 contextMenuActionsAlwaysShown=_layouts,_preferences,_quit_latte,_separator1,_add_latte_widgets,_add_view
 inAdvancedModeForEditSettings=true
+inConfigureAppletsMode=false
 isAvailableGeometryBroadcastedToPlasma=true
 launchers=
 memoryUsage=0
 metaPressAndHoldEnabled=true
 mouseSensitivity=2
+parabolicSpread=3
+parabolicThicknessMarginInfluence=1
 screenTrackerInterval=2500
 showInfoWindow=true
 singleModeLayoutName=My Layout
