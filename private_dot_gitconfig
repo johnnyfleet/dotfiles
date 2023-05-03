@@ -2,6 +2,7 @@
 	email = johnnyfleet@gmail.com
 	name = John Stephenson
 	signinkey = DD8447134681CAAE
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMki6rYwKM+wdjHwqwwobPdt9fknEcMZ5uCNcv79UCiX
 
 [github]
 	user = johnnyfleet
@@ -12,3 +13,7 @@
 	required = true
 [commit]
 	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /opt/1Password/op-ssh-sign
