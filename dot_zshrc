@@ -12,8 +12,13 @@ fi
 alias sbj='ssh john@big-john'
 alias spg='ssh john@plexguide'
 alias sur='ssh john@ubuntu-rclone'
+alias spi='ssh pi@raspberrypi'
 alias ll='ls -alh'
 alias suu='pamac update && flatpak update && sudo needrestart'
 alias suuu='pamac update --force-refresh && flatpak update && sudo needrestart'
+alias tu='sudo tailscale up'
+alias tuu='sudo tailscale up --exit-node=100.64.154.8'
+alias td='sudo tailscale down'
+alias ts='tailscale status && expressvpn status'
 export GPG_TTY=$(tty)
-export ANSIBLE_VAULT_PASSWORD_FILE=`command -v ~/ansible/lpass_vault.sh`
+export ANSIBLE_VAULT_PASSWORD_FILE=`command -v ~/ansible/opass_vault.sh`
