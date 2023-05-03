@@ -4,5 +4,9 @@
     "git.confirmSync": false,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "git.suggestSmartCommit": false,
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh"
 }
