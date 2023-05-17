@@ -12,6 +12,8 @@ fi
 alias sbj='ssh john@big-john'
 alias spg='ssh john@plexguide'
 alias sur='ssh john@ubuntu-rclone'
+alias soc='ssh ubuntu@minecraft-server'
+alias spt='ssh ubuntu@pterodactyl'
 alias spi='ssh pi@raspberrypi'
 alias ll='ls -alh'
 alias suu='pamac update && flatpak update && sudo needrestart'
