@@ -22,7 +22,7 @@ alias tu='sudo tailscale up --exit-node='
 alias tuu='sudo tailscale up --exit-node=100.64.154.8'
 alias td='sudo tailscale down'
 alias ts='tailscale status && expressvpn status'
-alias du='docker-compose up -d'
-alias dd='docker-compose down'
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
 export GPG_TTY=$(tty)
 export ANSIBLE_VAULT_PASSWORD_FILE=`command -v ~/ansible/opass_vault.sh`
