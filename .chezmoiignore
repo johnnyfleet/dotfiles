@@ -10,6 +10,10 @@ dot_config/Code/User/settings.json
 .zshrc_ubuntu
 .p10k.zsh
 {{ end }}
+{{ if ne .chezmoi.osRelease.id "debian" }}
+.zshrc_debian
+.p10k.zsh
+{{ end }}
 {{ if ne .chezmoi.osRelease.id "manjaro" }}
 .zshrc_manjaro
 {{ end }}
