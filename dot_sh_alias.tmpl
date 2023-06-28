@@ -1,20 +1,10 @@
-# Use powerline
-USE_POWERLINE="true"
-# Source manjaro-zsh-configuration
-if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-  source /usr/share/zsh/manjaro-zsh-config
-fi
-# Use manjaro zsh prompt
-if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
-fi
-
 alias sbj='ssh john@big-john'
 alias spg='ssh john@plexguide'
 alias sur='ssh john@ubuntu-rclone'
 alias soc='ssh ubuntu@minecraft-server'
 alias spi='ssh pi@raspberrypi'
 alias sha='ssh john@homeassistant'
+alias sas='ssh john@arch-server'
 alias ll='ls -alh'
 alias suu='pamac update && flatpak update && sudo needrestart'
 alias suuu='pamac update --force-refresh && flatpak update && sudo needrestart'
@@ -24,3 +14,4 @@ alias td='sudo tailscale down'
 alias ts='tailscale status'
 export GPG_TTY=$(tty)
 export ANSIBLE_VAULT_PASSWORD_FILE=`command -v ~/ansible/opass_vault.sh`
+

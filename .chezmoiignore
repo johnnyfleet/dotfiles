@@ -5,3 +5,10 @@ LICENSE
 ~/.config/latte/My Layout.layout.latte
 dot_config/Code/User/settings.json
 {{- end }}
+
+{{ if ne .chezmoi.osRelease.id "ubuntu" }}
+.bashrc_ubuntu
+{{ end }}
+{{ if ne .chezmoi.osRelease.id "manjaro" }}
+.bashrc_manjaro
+{{ end }}
