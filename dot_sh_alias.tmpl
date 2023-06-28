@@ -9,7 +9,7 @@ alias ll='ls -alh'
 
 ## Update scripts
 {{ if eq .chezmoi.osRelease.id "ubuntu" -}}
-alias suuu='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+alias suu='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 {{ else if eq .chezmoi.osRelease.id "manjaro" -}}
 alias suu='pamac update && flatpak update && sudo needrestart'
 alias suuu='pamac update --force-refresh && flatpak update && sudo needrestart'
