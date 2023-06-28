@@ -8,5 +8,6 @@
     "[python]": {
         "editor.formatOnType": true
     },
-    "terminal.integrated.defaultProfile.linux": "zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "files.trimTrailingWhitespace": true
 }
