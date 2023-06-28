@@ -1,1 +1,1 @@
-sh -c "$(curl -fsLS https://chezmoi.io/get)" -- init --apply johnnyfleet
+cd ~ && sh -c "$(curl -fsLS https://chezmoi.io/get)" -- init --apply johnnyfleet
