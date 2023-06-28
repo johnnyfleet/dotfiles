@@ -1,5 +1,7 @@
 README.md
 LICENSE
+install
+
 {{- if ne .chezmoi.hostname "john-manjaro" }}
 ~/.config/lattedockrc # only manage latte on laptop
 ~/.config/latte/My Layout.layout.latte
