@@ -7,8 +7,9 @@ dot_config/Code/User/settings.json
 {{- end }}
 
 {{ if ne .chezmoi.osRelease.id "ubuntu" }}
-.bashrc_ubuntu
+.zshrc_ubuntu
+.p10k.zsh
 {{ end }}
 {{ if ne .chezmoi.osRelease.id "manjaro" }}
-.bashrc_manjaro
+.zshrc_manjaro
 {{ end }}

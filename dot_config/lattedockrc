@@ -4,8 +4,10 @@ Recent URLs[$e]=file:$HOME/.config/latte/,file:$HOME/
 detailViewIconSize=16
 
 [KPropertiesDialog]
+1920x1200 screen: Height=591
+1920x1200 screen: Width=473
 3440x1440 screen: Height=591
-3440x1440 screen: Width=650
+3440x1440 screen: Width=474
 DP-3 Height 3440x1440 DP-3=591
 DP-3 Width 3440x1440 DP-3=436
 
@@ -30,14 +32,12 @@ windowSize=980,796
 [PlasmaThemeExtended]
 outlineWidth=1
 
-[PlasmaTransientsConfig]
-PreloadWeight=0
-
 [ScreenConnectors]
 10=eDP-1:::0,0 1920x1200
 11=DP-3:::0,0 3440x1440
-12=DP-2:::1920,60 1920x1080
+12=DP-2:::0,0 1920x1080
 13=:::0,0 0x0
+14=DVI-I-1-1:::1920,0 1920x1080
 
 [UniversalSettings]
 badges3DStyle=false
