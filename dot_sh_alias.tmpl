@@ -6,12 +6,20 @@ alias spi='ssh pi@raspberrypi'
 alias sha='ssh john@homeassistant'
 alias sas='ssh john@arch-server'
 alias ll='ls -alh'
+
+## Update scripts
+{{ if eq .chezmoi.osRelease.id "ubuntu" -}}
+alias suuu='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+{{ else if eq .chezmoi.osRelease.id "manjaro" -}}
 alias suu='pamac update && flatpak update && sudo needrestart'
 alias suuu='pamac update --force-refresh && flatpak update && sudo needrestart'
+{{ end }}
+
 alias tu='sudo tailscale up --exit-node='
 alias tuu='sudo tailscale up --exit-node=100.64.154.8'
 alias td='sudo tailscale down'
 alias ts='tailscale status'
+
 export GPG_TTY=$(tty)
 export ANSIBLE_VAULT_PASSWORD_FILE=`command -v ~/ansible/opass_vault.sh`
 
