@@ -47,6 +47,11 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# append bin to local directory
+path+=('~/bin')
+# export to sub-processes (make it inherited by child processes)
+export PATH
+
 # Import aliases
 if [[ -e ~/.sh_alias ]]; then
   source ~/.sh_alias
