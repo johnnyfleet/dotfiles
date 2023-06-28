@@ -138,7 +138,8 @@ ex ()
   fi
 }
 
-alias sbj='ssh john@big-john'
-alias spg='ssh john@plexguide'
-alias sur='ssh john@ubuntu-rclone'
-alias ll='ls -alh'
+# Import aliases
+if [[ -e ~/.sh_alias ]]; then
+  source ~/.sh_alias
+fi
+
