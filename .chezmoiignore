@@ -8,12 +8,8 @@ install
 dot_config/Code/User/settings.json
 {{- end }}
 
-{{ if ne .chezmoi.osRelease.id "ubuntu" }}
+{{ if ( and (ne .chezmoi.osRelease.id "ubuntu") (ne .chezmoi.osRelease.id "debian")) }}
 .zshrc_ubuntu
-.p10k.zsh
-{{ end }}
-{{ if ne .chezmoi.osRelease.id "debian" }}
-.zshrc_debian
 .p10k.zsh
 {{ end }}
 {{ if ne .chezmoi.osRelease.id "manjaro" }}
