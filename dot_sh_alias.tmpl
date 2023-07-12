@@ -8,7 +8,7 @@ alias sas='ssh john@arch-server'
 alias ll='ls -alh'
 
 ## Update scripts
-{{ if eq .chezmoi.osRelease.id "ubuntu" -}}
+{{ if (or (eq .chezmoi.osRelease.id "ubuntu" .chezmoi.osRelease.id "debian")) -}}
 alias suu='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 {{ else if eq .chezmoi.osRelease.id "manjaro" -}}
 alias suu='pamac update && flatpak update && sudo needrestart'
