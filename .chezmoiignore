@@ -1,6 +1,7 @@
 README.md
 LICENSE
 install
+install.sh
 
 {{- if ne .chezmoi.hostname "john-manjaro" }}
 ~/.config/lattedockrc # only manage latte on laptop
@@ -20,4 +21,7 @@ dot_config/Code/User/settings.json
 {{ if ne .chezmoi.osRelease.id "manjaro" }}
 .zshrc_manjaro
 {{ end }}
-install.sh
+
+{{- if .codespaces -}}
+.gitignore
+{{- end -}}
