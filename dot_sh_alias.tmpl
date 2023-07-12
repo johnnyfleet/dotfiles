@@ -8,7 +8,7 @@ alias sas='ssh john@arch-server'
 alias ll='ls -alh'
 
 ## Update scripts
-{{ if (or (eq .chezmoi.osRelease.id "ubuntu" .chezmoi.osRelease.id "debian")) -}}
+{{ if eq .chezmoi.osRelease.id "ubuntu" "debian" -}}
 alias suu='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 {{ else if eq .chezmoi.osRelease.id "manjaro" -}}
 alias suu='pamac update && flatpak update && sudo needrestart'
@@ -21,5 +21,7 @@ alias td='sudo tailscale down'
 alias ts='tailscale status'
 
 export GPG_TTY=$(tty)
-export ANSIBLE_VAULT_PASSWORD_FILE=`command -v ~/ansible/opass_vault.sh`
 
+{{ if (not .codespaces) -}}
+export ANSIBLE_VAULT_PASSWORD_FILE=`command -v ~/ansible/opass_vault.sh`
+{{ end }}
