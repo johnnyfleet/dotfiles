@@ -1,9 +1,9 @@
 {{ if eq .chezmoi.osRelease.id "ubuntu" "debian" -}}
 #!/bin/sh
 # Ubuntu-specific code
-sudo apt update && sudo apt install git zsh
+sudo apt update && sudo apt install -y git zsh
 {{ if .codespaces -}}
-sudo apt install snapd
+sudo apt install -y snapd
 {{ end }}
 sudo snap install nvim --classic
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
