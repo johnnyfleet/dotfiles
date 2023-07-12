@@ -23,5 +23,5 @@ dot_config/Code/User/settings.json
 {{ end }}
 
 {{- if .codespaces -}}
-.gitignore
+.gitconfig
 {{- end -}}
